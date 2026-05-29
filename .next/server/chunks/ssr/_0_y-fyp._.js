@@ -1,3 +1,0 @@
-module.exports=[33354,(a,b,c)=>{"use strict";c._=function(a){return a&&a.__esModule?a:{default:a}}},88457,a=>{"use strict";var b=a.i(87924),c=a.i(72131);a.s(["default",0,function({children:a,className:d="",delay:e=0}){let f=(0,c.useRef)(null);(0,c.useEffect)(()=>{let a=f.current;if(!a)return;let b=new IntersectionObserver(([c])=>{c.isIntersecting&&(a.classList.add("in"),b.disconnect())},{threshold:.1,rootMargin:"0px 0px -40px 0px"});return b.observe(a),()=>b.disconnect()},[]);let g=e>0?`reveal-d${e}`:"";return(0,b.jsx)("div",{ref:f,className:`reveal ${g} ${d}`,children:a})}])}];
-
-//# sourceMappingURL=_0_y-fyp._.js.map
