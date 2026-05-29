@@ -1,0 +1,380 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Reveal from "@/components/Reveal";
+import { venues } from "@/lib/venues";
+
+export const metadata: Metadata = {
+  title: "Bika Banquets | Luxury Wedding & Event Venues in Kolkata — Golaghata, Baguiati, Howrah",
+  description:
+    "Bika Banquets offers premium wedding and event venues across Kolkata — Golaghata, Baguiati & Howrah. In-house catering from ₹700/plate, décor, valet parking for 150–700 guests. Book now.",
+};
+
+const CDN = "https://assets.zyrosite.com/cdn-cgi/image/format=auto";
+
+const services = [
+  { num: "01", name: "Weddings & Receptions", desc: "Full-day packages with mandap, floral décor, bridal entry and multi-cuisine buffet — Bengali, Marwari and North Indian traditions welcomed.", tags: ["Bengali Weddings", "Marwari", "Reception"] },
+  { num: "02", name: "Pre-Wedding Ceremonies", desc: "Dedicated setups for Sangeet, Mehndi, Tilak, Haldi and Engagement with thematic décor and live music.", tags: ["Sangeet", "Mehndi", "Engagement"] },
+  { num: "03", name: "Corporate Events", desc: "Conference-ready halls with projector, screens and PA system — ideal for seminars, product launches and AGMs.", tags: ["Seminars", "Conferences", "Dinners"] },
+  { num: "04", name: "Birthdays & Anniversaries", desc: "From intimate 50-guest dinners to grand 500-guest celebrations with customised layout, menu and décor.", tags: ["Birthdays", "Anniversaries", "Baby Shower"] },
+  { num: "05", name: "In-House Catering", desc: "Our kitchen handles Bengali spreads, Mughlai cuisine, continental and Jain menus — all prepared fresh on the day.", tags: ["Veg from ₹700/plate", "Non-Veg ₹1,300+"] },
+  { num: "06", name: "Décor & Florals", desc: "Bespoke floral installations, stage backdrops, LED lighting rigs and themed entryways — no outside decorators needed.", tags: ["Floral Mandap", "LED Lighting", "Entry Arch"] },
+];
+
+const stats = [
+  { val: "700+", label: "Max Guests" },
+  { val: "3",    label: "Locations" },
+  { val: "1000+",label: "Events Hosted" },
+  { val: "9+",   label: "Years of Excellence" },
+];
+
+const galleryImages = [
+  { src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03314-4jZHMRzDhNKgTfVR.JPG`, alt: "Decorated wedding stage at Bika Banquets Golaghata Kolkata", caption: "Wedding Reception · Golaghata", cls: "col-span-5 row-span-2" },
+  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/dsc05317-6W1igokk7BwFIn1u.JPG`,   alt: "Elegant floral event décor at Bika Banquets", caption: "Floral Décor", cls: "col-span-4 row-span-2" },
+  { src: `${CDN},w=800/MBlLcEqY2yw3y2EF/dsc00049-fYweGYuBJPDT148v.JPG`,   alt: "Banquet hall arrangement at Bika Rythm Baguiati", caption: "Hall Setup · Baguiati", cls: "col-span-3 row-span-2" },
+  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/1-126-mklv3kpxZeF8CDys.JPG`,     alt: "Celebration in progress at Bika Banquets", caption: "Live Celebration", cls: "col-span-4" },
+  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/dsc00169-HvbTjGsoDPzlAoxy.JPG`,  alt: "Interior of Bika Rythm venue, Baguiati Kolkata", caption: "Bika Rythm Interior", cls: "col-span-4" },
+  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/115a6487-ovJFGLVkQmHn96bH.JPG`,  alt: "Grand banquet hall at Bika Banquets Golaghata", caption: "Grand Hall · Golaghata", cls: "col-span-4" },
+];
+
+export default function HomePage() {
+  return (
+    <>
+      {/* ── HERO ── */}
+      <section className="relative min-h-screen flex items-end overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={`${CDN},w=2400/MBlLcEqY2yw3y2EF/smp01053-lz0Jo3w4Q9TkR6GT.JPG`}
+            alt="Elegant banquet hall at Bika Banquets, Golaghata, Kolkata — decorated for a grand wedding reception"
+            fill
+            priority
+            className="object-cover animate-slow-zoom"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-bg/55" />
+          <div className="absolute inset-0 bg-gradient-to-r from-bg/70 to-transparent" />
+        </div>
+
+        <div className="relative z-10 w-full pb-20 max-w-6xl mx-auto px-10">
+          <span
+            className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium animate-fade-up"
+            style={{ animationDelay: "0.3s" }}
+          >
+            <span className="w-7 h-px bg-gold inline-block" />
+            Premier Event Venues · Kolkata · Since 2016
+          </span>
+
+          <h1 className="font-serif font-light text-[clamp(52px,9vw,120px)] leading-[0.98] tracking-[-0.02em] mt-6 mb-7 max-w-[14ch]">
+            <span className="line-mask block">
+              <span className="block animate-line-up" style={{ animationDelay: "0.4s" }}>
+                Where Every
+              </span>
+            </span>
+            <span className="line-mask block">
+              <span className="block animate-line-up italic text-gold-bright" style={{ animationDelay: "0.55s" }}>
+                Celebration
+              </span>
+            </span>
+            <span className="line-mask block">
+              <span className="block animate-line-up" style={{ animationDelay: "0.7s" }}>
+                Becomes Legend
+              </span>
+            </span>
+          </h1>
+
+          <p
+            className="text-[clamp(15px,1.6vw,18px)] text-cream-dim max-w-lg mb-10 leading-relaxed animate-fade-up"
+            style={{ animationDelay: "0.9s" }}
+          >
+            Luxury wedding and event venues across Kolkata — Golaghata, Baguiati &amp; Howrah — with in-house catering, bespoke décor and valet parking for 150 to 700 guests.
+          </p>
+
+          <div
+            className="flex gap-4 flex-wrap animate-fade-up"
+            style={{ animationDelay: "1.05s" }}
+          >
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-3 bg-gold text-bg px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(201,162,75,0.3)]"
+            >
+              Book a Venue Visit
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </Link>
+            <Link
+              href="/venues"
+              className="inline-flex items-center gap-3 border border-line-strong text-cream px-8 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-cream hover:bg-cream/5 transition-all duration-300"
+            >
+              Explore Venues
+            </Link>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div
+          className="absolute bottom-9 right-10 z-10 hidden md:flex items-center gap-3 text-[10px] tracking-[2px] uppercase text-cream-dim animate-fade-up"
+          style={{ animationDelay: "1.4s" }}
+        >
+          <span>Scroll</span>
+          <span className="scroll-bar" />
+        </div>
+      </section>
+
+      {/* ── STAT BAR ── */}
+      <div className="border-y border-line bg-bg-warm">
+        <div className="grid grid-cols-2 md:grid-cols-4 max-w-6xl mx-auto">
+          {stats.map(({ val, label }, i) => (
+            <div
+              key={i}
+              className={`py-11 px-8 text-center ${i < 3 ? "border-r border-line" : ""} ${i >= 2 ? "border-t md:border-t-0 border-line" : ""}`}
+            >
+              <div className="font-serif text-[clamp(36px,5vw,52px)] font-light text-gold-bright leading-none">{val}</div>
+              <div className="text-[11px] tracking-[2px] uppercase text-cream-dim mt-3">{label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── ABOUT ── */}
+      <section className="py-36 max-w-6xl mx-auto px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <Reveal className="relative">
+            <div className="relative w-full aspect-[4/5] rounded-sm overflow-hidden">
+              <Image
+                src={`${CDN},w=900/MBlLcEqY2yw3y2EF/dsc03288-WRXbWDLxQ61W4dfF.JPG`}
+                alt="Spacious banquet hall set with dining tables at Bika Banquets Kolkata"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            <div className="absolute bottom-[-40px] left-[-40px] w-[52%] aspect-square overflow-hidden border-[8px] border-bg shadow-2xl rounded-sm hidden md:block">
+              <Image
+                src={`${CDN},w=600/MBlLcEqY2yw3y2EF/dsc03268-rXHN2kHdCDZJ77Vn.JPG`}
+                alt="Décor and event detail at Bika Banquets"
+                fill
+                className="object-cover"
+                sizes="25vw"
+              />
+            </div>
+            <div className="absolute top-7 right-[-20px] bg-burgundy text-cream px-6 py-5 rounded-sm shadow-2xl hidden md:block">
+              <div className="font-serif text-4xl font-light leading-none">2016</div>
+              <div className="text-[10px] tracking-[1.5px] uppercase opacity-80 mt-1">Est.</div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={1}>
+            <span className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium">
+              <span className="w-7 h-px bg-gold inline-block" />
+              About Bika Banquets
+            </span>
+            <h2 className="font-serif font-light text-[clamp(34px,4vw,56px)] leading-[1.05] tracking-[-0.02em] mt-6 mb-6">
+              Kolkata&apos;s Trusted Partner for <em className="italic text-gold">Unforgettable</em> Occasions
+            </h2>
+            <p className="text-cream-dim text-base leading-[1.9] mb-5">
+              Since 2016, <strong className="text-cream font-normal">Bika Banquets</strong> has hosted thousands of weddings, receptions, corporate gatherings and family celebrations across three purpose-built venues in Golaghata, Baguiati and Howrah.
+            </p>
+            <p className="text-cream-dim text-base leading-[1.9] mb-8">
+              What sets us apart is complete in-house control — <strong className="text-cream font-normal">our own kitchen, our own decorators, our own event team</strong> — so every detail stays consistent and accountable, from first enquiry to final farewell.
+            </p>
+            <div className="grid grid-cols-2 gap-3">
+              {[
+                { icon: "🍽", title: "In-House Catering", desc: "Multi-cuisine, veg & non-veg" },
+                { icon: "💐", title: "Bespoke Décor", desc: "Custom floral & thematic setups" },
+                { icon: "🚗", title: "Free Valet Parking", desc: "Covered parking at all venues" },
+                { icon: "❄️", title: "Centralised AC", desc: "Fully air-conditioned halls" },
+              ].map(({ icon, title, desc }) => (
+                <div key={title} className="flex gap-3 p-4 border border-line rounded-sm hover:border-line-strong hover:bg-cream/[0.02] transition-all duration-300">
+                  <span className="text-xl mt-0.5">{icon}</span>
+                  <div>
+                    <div className="text-sm text-cream font-normal">{title}</div>
+                    <div className="text-xs text-cream-dim mt-0.5 leading-relaxed">{desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── VENUES PREVIEW ── */}
+      <section className="bg-bg-warm py-36">
+        <div className="max-w-6xl mx-auto px-10">
+          <Reveal>
+            <span className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium">
+              <span className="w-7 h-px bg-gold inline-block" />
+              Our Locations
+            </span>
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mt-4 mb-14">
+              <h2 className="font-serif font-light text-[clamp(34px,4.5vw,60px)] leading-[1.05] tracking-[-0.02em]">
+                Three Venues, One <em className="italic text-gold">Standard</em>
+              </h2>
+              <Link href="/venues" className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-gold font-medium hover:gap-4 transition-all duration-300 flex-shrink-0 mb-2">
+                View All Venues
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </Link>
+            </div>
+          </Reveal>
+
+          <div className="space-y-px">
+            {venues.map((v, i) => (
+              <Reveal key={v.slug} delay={(i % 3) as 0 | 1 | 2 | 3}>
+                <Link href={`/venues/${v.slug}`} className="group grid grid-cols-1 md:grid-cols-2 border border-line hover:border-line-strong transition-colors duration-300 block">
+                  <div className="relative overflow-hidden min-h-[280px]">
+                    <Image
+                      src={v.heroImage.src.replace("w=2000", "w=800")}
+                      alt={v.heroImage.alt}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent" />
+                    <div className="absolute top-6 left-6 font-serif text-lg text-cream bg-bg/60 backdrop-blur-sm w-10 h-10 rounded-full flex items-center justify-center border border-line-strong">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                  </div>
+                  <div className="p-10 flex flex-col justify-center">
+                    <span className="text-[11px] tracking-[3px] uppercase text-gold mb-3">{v.tagline}</span>
+                    <h3 className="font-serif font-light text-[clamp(26px,3vw,38px)] leading-[1.1] mb-3">{v.displayName}</h3>
+                    <p className="text-sm text-cream-dim flex items-center gap-2 mb-5">
+                      <svg className="w-3 h-3 text-gold flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      {v.address}
+                    </p>
+                    <p className="text-sm text-cream-dim leading-relaxed mb-6">{v.description}</p>
+                    <div className="flex gap-8 pt-5 border-t border-line">
+                      {v.capacity.map((c) => (
+                        <div key={c.label}>
+                          <div className="font-serif text-2xl text-gold-bright font-light leading-none">{c.floating}</div>
+                          <div className="text-[10px] tracking-[1.5px] uppercase text-cream-dim mt-1.5">{c.label} Floating</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── SERVICES ── */}
+      <section className="py-36 max-w-6xl mx-auto px-10">
+        <Reveal>
+          <span className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium">
+            <span className="w-7 h-px bg-gold inline-block" />
+            What We Do
+          </span>
+          <h2 className="font-serif font-light text-[clamp(34px,4.5vw,60px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-14">
+            Every Event, <em className="italic text-gold">Flawlessly</em> Managed
+          </h2>
+        </Reveal>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
+          {services.map(({ num, name, desc, tags }, i) => (
+            <Reveal key={num} delay={((i % 3) as 0 | 1 | 2)} className="bg-bg p-12 hover:bg-bg-warm transition-colors duration-300 group relative">
+              <div className="font-serif text-5xl text-line font-light leading-none mb-6 group-hover:text-burgundy/20 transition-colors duration-300">{num}</div>
+              <h3 className="font-serif text-2xl font-normal mb-3">{name}</h3>
+              <p className="text-sm text-cream-dim leading-[1.8] mb-5">{desc}</p>
+              <div className="flex flex-wrap gap-2">
+                {tags.map((t) => (
+                  <span key={t} className="text-[10px] tracking-[1.5px] uppercase text-burgundy-bright bg-burgundy/10 px-3 py-1 rounded-sm">{t}</span>
+                ))}
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-burgundy scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* ── GALLERY STRIP ── */}
+      <section className="py-36 bg-bg-warm">
+        <div className="max-w-6xl mx-auto px-10">
+          <Reveal>
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+              <div>
+                <span className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium">
+                  <span className="w-7 h-px bg-gold inline-block" />
+                  Gallery
+                </span>
+                <h2 className="font-serif font-light text-[clamp(34px,4.5vw,60px)] leading-[1.05] tracking-[-0.02em] mt-4">
+                  Moments We&apos;ve Made <em className="italic text-gold">Unforgettable</em>
+                </h2>
+              </div>
+              <Link href="/gallery" className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-gold font-medium hover:gap-4 transition-all duration-300 flex-shrink-0 mb-2">
+                View Full Gallery
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </Link>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className="grid grid-cols-12 auto-rows-[180px] gap-3">
+              {galleryImages.map(({ src, alt, caption, cls }, i) => (
+                <div key={i} className={`${cls} relative overflow-hidden rounded-sm group cursor-pointer`}>
+                  <Image src={src} alt={alt} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 50vw, 25vw" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  {caption && (
+                    <span className="absolute bottom-4 left-4 text-xs tracking-wider text-cream opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">{caption}</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── CATERING BANNER ── */}
+      <section className="relative py-0">
+        <div className="relative min-h-[520px] flex items-center overflow-hidden">
+          <Image
+            src={`${CDN},w=2000/MBlLcEqY2yw3y2EF/dsc03268-rXHN2kHdCDZJ77Vn.JPG`}
+            alt="In-house catering and dining setup at Bika Banquets Kolkata"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/75 to-bg/30 md:to-transparent" />
+          <div className="relative z-10 max-w-6xl mx-auto px-10 py-24">
+            <Reveal className="max-w-lg">
+              <span className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium">
+                <span className="w-7 h-px bg-gold inline-block" />
+                In-House Kitchen
+              </span>
+              <h2 className="font-serif font-light text-[clamp(34px,4vw,56px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-5">
+                Cuisine That <em className="italic text-gold">Lingers</em> in Memory
+              </h2>
+              <p className="text-cream-dim text-base leading-[1.85] mb-8">
+                From authentic Bengali fish preparations and rich Mughlai biryanis to continental live counters and pure-veg Jain thalis — our chefs prepare every dish fresh on the day. No outsourced catering, no compromise.
+              </p>
+              <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-bg px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5">
+                Request a Menu &amp; Quote
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </Link>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA STRIP ── */}
+      <section className="py-28 max-w-6xl mx-auto px-10 text-center">
+        <Reveal>
+          <span className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium justify-center">
+            <span className="w-7 h-px bg-gold inline-block" />
+            Ready to Begin?
+          </span>
+          <h2 className="font-serif font-light text-[clamp(34px,5vw,72px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-6">
+            Let&apos;s Plan Your <em className="italic text-gold">Perfect Day</em>
+          </h2>
+          <p className="text-cream-dim text-base max-w-xl mx-auto mb-10 leading-relaxed">
+            Get in touch for a site visit, a detailed quotation or just to check date availability. We respond within a few hours.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-bg px-10 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(201,162,75,0.3)]">
+              Enquire Now
+            </Link>
+            <a href="tel:+918961333313" className="inline-flex items-center gap-3 border border-line-strong text-cream px-10 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300">
+              +91 89613 33313
+            </a>
+          </div>
+        </Reveal>
+      </section>
+    </>
+  );
+}
