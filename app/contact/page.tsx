@@ -127,12 +127,12 @@ export default function ContactPage() {
                     <div>
                       <label htmlFor="name" className="block text-[10px] tracking-[2px] uppercase text-cream-dim mb-2">Full Name *</label>
                       <input id="name" name="name" type="text" required placeholder="Your full name" autoComplete="name"
-                        className="w-full bg-bg border border-line px-4 py-3.5 text-cream text-sm rounded-sm outline-none focus:border-gold transition-colors placeholder:text-cream-dim/40" />
+                        className="w-full bg-bg border border-line px-4 py-3.5 text-cream text-sm rounded-sm outline-none focus:border-gold transition-colors placeholder:text-cream-dim/50" />
                     </div>
                     <div>
                       <label htmlFor="phone" className="block text-[10px] tracking-[2px] uppercase text-cream-dim mb-2">Phone Number *</label>
                       <input id="phone" name="phone" type="tel" required placeholder="+91 98765 43210" autoComplete="tel"
-                        className="w-full bg-bg border border-line px-4 py-3.5 text-cream text-sm rounded-sm outline-none focus:border-gold transition-colors placeholder:text-cream-dim/40" />
+                        className="w-full bg-bg border border-line px-4 py-3.5 text-cream text-sm rounded-sm outline-none focus:border-gold transition-colors placeholder:text-cream-dim/50" />
                     </div>
                   </div>
 
@@ -155,7 +155,7 @@ export default function ContactPage() {
                     <div>
                       <label htmlFor="event_date" className="block text-[10px] tracking-[2px] uppercase text-cream-dim mb-2">Event Date</label>
                       <input id="event_date" name="event_date" type="date"
-                        className="w-full bg-bg border border-line px-4 py-3.5 text-cream text-sm rounded-sm outline-none focus:border-gold transition-colors [color-scheme:dark]" />
+                        className="w-full bg-bg border border-line px-4 py-3.5 text-cream text-sm rounded-sm outline-none focus:border-gold transition-colors [color-scheme:light]" />
                     </div>
                     <div>
                       <label htmlFor="guests" className="block text-[10px] tracking-[2px] uppercase text-cream-dim mb-2">Expected Guests</label>
@@ -186,11 +186,11 @@ export default function ContactPage() {
                   <div>
                     <label htmlFor="message" className="block text-[10px] tracking-[2px] uppercase text-cream-dim mb-2">Additional Details</label>
                     <textarea id="message" name="message" rows={4} placeholder="Special requirements, theme preferences, dietary needs..."
-                      className="w-full bg-bg border border-line px-4 py-3.5 text-cream text-sm rounded-sm outline-none focus:border-gold transition-colors placeholder:text-cream-dim/40 resize-none" />
+                      className="w-full bg-bg border border-line px-4 py-3.5 text-cream text-sm rounded-sm outline-none focus:border-gold transition-colors placeholder:text-cream-dim/50 resize-none" />
                   </div>
 
                   <button type="submit"
-                    className="w-full bg-gold text-bg py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5">
+                    className="w-full bg-gold text-white py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5">
                     Send Enquiry →
                   </button>
 

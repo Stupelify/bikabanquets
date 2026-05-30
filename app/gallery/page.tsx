@@ -58,10 +58,10 @@ export default function GalleryPage() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-400" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-400" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
-                  <span className="text-[10px] tracking-[2px] uppercase text-gold block mb-1">{img.venue} · {img.category}</span>
-                  <span className="text-sm text-cream font-light">{img.caption}</span>
+                  <span className="text-[10px] tracking-[2px] uppercase text-gold-bright block mb-1">{img.venue} · {img.category}</span>
+                  <span className="text-sm text-white font-light">{img.caption}</span>
                 </div>
               </div>
             ))}
@@ -75,14 +75,14 @@ export default function GalleryPage() {
               This gallery shows a small selection of events we&apos;ve hosted. To see photos from a specific type of event or venue, or to arrange a live site visit, get in touch with our team.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-bg px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300">
+              <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-white px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300">
                 Book a Site Visit
               </Link>
               <a
                 href="https://wa.me/918961333313?text=Hi%20Bika%20Banquets%2C%20can%20you%20share%20more%20photos%20of%20your%20venue%3F"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 border border-line-strong text-cream px-8 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300"
+                className="inline-flex items-center gap-3 border border-line-strong text-ink px-8 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300"
               >
                 Request More Photos on WhatsApp
               </a>

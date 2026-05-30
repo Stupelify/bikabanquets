@@ -44,15 +44,15 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={`${CDN},w=2400/MBlLcEqY2yw3y2EF/smp01053-lz0Jo3w4Q9TkR6GT.JPG`}
+            src={`${CDN},w=1600/MBlLcEqY2yw3y2EF/smp01053-lz0Jo3w4Q9TkR6GT.JPG`}
             alt="Elegant banquet hall at Bika Banquets, Golaghata, Kolkata — decorated for a grand wedding reception"
             fill
             priority
             className="object-cover animate-slow-zoom"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-bg/55" />
-          <div className="absolute inset-0 bg-gradient-to-r from-bg/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/55" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/70 to-transparent" />
         </div>
 
         <div className="relative z-10 w-full pb-20 max-w-6xl mx-auto px-10">
@@ -64,7 +64,7 @@ export default function HomePage() {
             Premier Event Venues · Kolkata · Since 2016
           </span>
 
-          <h1 className="font-serif font-light text-[clamp(52px,9vw,120px)] leading-[0.98] tracking-[-0.02em] mt-6 mb-7 max-w-[14ch]">
+          <h1 className="font-serif font-light text-[clamp(52px,9vw,120px)] leading-[0.98] tracking-[-0.02em] mt-6 mb-7 max-w-[14ch] text-white">
             <span className="line-mask block">
               <span className="block animate-line-up" style={{ animationDelay: "0.4s" }}>
                 Where Every
@@ -83,7 +83,7 @@ export default function HomePage() {
           </h1>
 
           <p
-            className="text-[clamp(15px,1.6vw,18px)] text-cream-dim max-w-lg mb-10 leading-relaxed animate-fade-up"
+            className="text-[clamp(15px,1.6vw,18px)] text-white/85 max-w-lg mb-10 leading-relaxed animate-fade-up"
             style={{ animationDelay: "0.9s" }}
           >
             Luxury wedding and event venues across Kolkata — Golaghata, Baguiati &amp; Howrah — with in-house catering, bespoke décor and valet parking for 150 to 700 guests.
@@ -95,14 +95,14 @@ export default function HomePage() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 bg-gold text-bg px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(201,162,75,0.3)]"
+              className="inline-flex items-center gap-3 bg-gold text-white px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(201,162,75,0.3)]"
             >
               Book a Venue Visit
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </Link>
             <Link
               href="/venues"
-              className="inline-flex items-center gap-3 border border-line-strong text-cream px-8 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-cream hover:bg-cream/5 transition-all duration-300"
+              className="inline-flex items-center gap-3 border border-white/40 text-white px-8 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-white hover:bg-white/10 transition-all duration-300"
             >
               Explore Venues
             </Link>
@@ -111,7 +111,7 @@ export default function HomePage() {
 
         {/* Scroll indicator */}
         <div
-          className="absolute bottom-9 right-10 z-10 hidden md:flex items-center gap-3 text-[10px] tracking-[2px] uppercase text-cream-dim animate-fade-up"
+          className="absolute bottom-9 right-10 z-10 hidden md:flex items-center gap-3 text-[10px] tracking-[2px] uppercase text-white/70 animate-fade-up"
           style={{ animationDelay: "1.4s" }}
         >
           <span>Scroll</span>
@@ -156,7 +156,7 @@ export default function HomePage() {
                 sizes="25vw"
               />
             </div>
-            <div className="absolute top-7 right-[-20px] bg-burgundy text-cream px-6 py-5 rounded-sm shadow-2xl hidden md:block">
+            <div className="absolute top-7 right-[-20px] bg-burgundy text-white px-6 py-5 rounded-sm shadow-xl hidden md:block">
               <div className="font-serif text-4xl font-light leading-none">2016</div>
               <div className="text-[10px] tracking-[1.5px] uppercase opacity-80 mt-1">Est.</div>
             </div>
@@ -227,8 +227,8 @@ export default function HomePage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent" />
-                    <div className="absolute top-6 left-6 font-serif text-lg text-cream bg-bg/60 backdrop-blur-sm w-10 h-10 rounded-full flex items-center justify-center border border-line-strong">
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink/55 to-transparent" />
+                    <div className="absolute top-6 left-6 font-serif text-lg text-white bg-ink/50 backdrop-blur-sm w-10 h-10 rounded-full flex items-center justify-center border border-line-strong">
                       {String(i + 1).padStart(2, "0")}
                     </div>
                   </div>
@@ -309,9 +309,9 @@ export default function HomePage() {
               {galleryImages.map(({ src, alt, caption, cls }, i) => (
                 <div key={i} className={`${cls} relative overflow-hidden rounded-sm group cursor-pointer`}>
                   <Image src={src} alt={alt} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 50vw, 25vw" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/75 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   {caption && (
-                    <span className="absolute bottom-4 left-4 text-xs tracking-wider text-cream opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">{caption}</span>
+                    <span className="absolute bottom-4 left-4 text-xs tracking-wider text-white opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">{caption}</span>
                   )}
                 </div>
               ))}
@@ -330,20 +330,20 @@ export default function HomePage() {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/75 to-bg/30 md:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/70 to-ink/25 md:to-transparent" />
           <div className="relative z-10 max-w-6xl mx-auto px-10 py-24">
             <Reveal className="max-w-lg">
               <span className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium">
                 <span className="w-7 h-px bg-gold inline-block" />
                 In-House Kitchen
               </span>
-              <h2 className="font-serif font-light text-[clamp(34px,4vw,56px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-5">
-                Cuisine That <em className="italic text-gold">Lingers</em> in Memory
+              <h2 className="font-serif font-light text-[clamp(34px,4vw,56px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-5 text-white">
+                Cuisine That <em className="italic text-gold-bright">Lingers</em> in Memory
               </h2>
-              <p className="text-cream-dim text-base leading-[1.85] mb-8">
+              <p className="text-white/80 text-base leading-[1.85] mb-8">
                 From authentic Bengali fish preparations and rich Mughlai biryanis to continental live counters and pure-veg Jain thalis — our chefs prepare every dish fresh on the day. No outsourced catering, no compromise.
               </p>
-              <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-bg px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5">
+              <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-white px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5">
                 Request a Menu &amp; Quote
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </Link>
@@ -366,10 +366,10 @@ export default function HomePage() {
             Get in touch for a site visit, a detailed quotation or just to check date availability. We respond within a few hours.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-bg px-10 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(201,162,75,0.3)]">
+            <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-white px-10 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(201,162,75,0.3)]">
               Enquire Now
             </Link>
-            <a href="tel:+918961333313" className="inline-flex items-center gap-3 border border-line-strong text-cream px-10 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300">
+            <a href="tel:+918961333313" className="inline-flex items-center gap-3 border border-line-strong text-ink px-10 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300">
               +91 89613 33313
             </a>
           </div>

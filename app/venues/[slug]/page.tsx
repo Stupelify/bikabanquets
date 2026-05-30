@@ -90,24 +90,24 @@ export default async function VenuePage({ params }: Props) {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/50 to-bg/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-bg/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/55 to-ink/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/65 to-transparent" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-10 pb-16 w-full">
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-[11px] tracking-widest uppercase text-cream-dim mb-8" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-gold transition-colors">Home</Link>
+          <nav className="flex items-center gap-2 text-[11px] tracking-widest uppercase text-white/70 mb-8" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-gold-bright transition-colors text-white/70">Home</Link>
             <span className="opacity-40">/</span>
-            <Link href="/venues" className="hover:text-gold transition-colors">Venues</Link>
+            <Link href="/venues" className="hover:text-gold-bright transition-colors text-white/70">Venues</Link>
             <span className="opacity-40">/</span>
-            <span className="text-gold">{v.brand}</span>
+            <span className="text-gold-bright">{v.brand}</span>
           </nav>
 
           <span className="text-[11px] tracking-[3px] uppercase text-gold mb-3 block">{v.tagline}</span>
-          <h1 className="font-serif font-light text-[clamp(44px,7vw,96px)] leading-[0.98] tracking-[-0.02em] mb-5">
+          <h1 className="font-serif font-light text-[clamp(44px,7vw,96px)] leading-[0.98] tracking-[-0.02em] mb-5 text-white">
             {v.displayName}
           </h1>
-          <p className="text-cream-dim text-lg max-w-xl leading-relaxed">{v.description}</p>
+          <p className="text-white/80 text-lg max-w-xl leading-relaxed">{v.description}</p>
         </div>
       </section>
 
@@ -229,7 +229,7 @@ export default async function VenuePage({ params }: Props) {
 
                   <Link
                     href={`/contact?venue=${v.slug}`}
-                    className="block w-full text-center bg-gold text-bg py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5 mb-3"
+                    className="block w-full text-center bg-gold text-white py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5 mb-3"
                   >
                     Send Enquiry
                   </Link>

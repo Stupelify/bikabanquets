@@ -46,8 +46,8 @@ export default function VenuesPage() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg/50 to-transparent" />
-              <div className="absolute top-8 left-8 font-serif text-xl text-cream bg-bg/60 backdrop-blur-sm w-12 h-12 rounded-full flex items-center justify-center border border-line-strong">
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/55 to-transparent" />
+              <div className="absolute top-8 left-8 font-serif text-xl text-white bg-ink/50 backdrop-blur-sm w-12 h-12 rounded-full flex items-center justify-center border border-line-strong">
                 {String(i + 1).padStart(2, "0")}
               </div>
             </Reveal>
@@ -105,7 +105,7 @@ export default function VenuesPage() {
               <div className="flex gap-4 flex-wrap">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-3 bg-gold text-bg px-7 py-3.5 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-3 bg-gold text-white px-7 py-3.5 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300 hover:-translate-y-0.5"
                 >
                   Enquire about this Venue
                 </Link>
@@ -135,8 +135,8 @@ export default function VenuesPage() {
                       sizes="(max-width: 1024px) 50vw, 33vw"
                     />
                     {img.caption && (
-                      <div className="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                        <span className="text-xs tracking-wider text-cream">{img.caption}</span>
+                      <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span className="text-xs tracking-wider text-white">{img.caption}</span>
                       </div>
                     )}
                   </div>
@@ -157,10 +157,10 @@ export default function VenuesPage() {
             Our team will help you choose based on guest count, event type and date. Call us or send an enquiry — we respond within a few hours.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-bg px-10 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300">
+            <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-white px-10 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300">
               Enquire Now
             </Link>
-            <a href="tel:+918961333313" className="inline-flex items-center gap-3 border border-line-strong text-cream px-10 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300">
+            <a href="tel:+918961333313" className="inline-flex items-center gap-3 border border-line-strong text-ink px-10 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300">
               +91 89613 33313
             </a>
           </div>

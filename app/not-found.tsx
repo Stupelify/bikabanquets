@@ -14,10 +14,10 @@ export default function NotFound() {
         The page you&apos;re looking for doesn&apos;t exist. Try navigating back to the homepage or exploring our venues.
       </p>
       <div className="flex flex-wrap gap-4 justify-center">
-        <Link href="/" className="inline-flex items-center gap-3 bg-gold text-bg px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300">
+        <Link href="/" className="inline-flex items-center gap-3 bg-gold text-white px-8 py-4 rounded-full text-xs tracking-widest uppercase font-semibold hover:bg-gold-bright transition-all duration-300">
           Back to Home
         </Link>
-        <Link href="/venues" className="inline-flex items-center gap-3 border border-line-strong text-cream px-8 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300">
+        <Link href="/venues" className="inline-flex items-center gap-3 border border-line-strong text-ink px-8 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300">
           Explore Venues
         </Link>
       </div>
