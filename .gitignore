@@ -1,2 +1,8 @@
 node_modules/
 .next/
+
+# Media tool secrets / outputs — never commit
+tools/credentials.json
+tools/token.json
+tools/.venv/
+tools/*.csv
