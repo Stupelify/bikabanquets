@@ -45,7 +45,9 @@ const localBusinessSchema = {
   servesCuisine: ["Indian","Bengali","Mughlai","Multi-Cuisine"],
   address: { "@type": "PostalAddress", streetAddress: "76/1 Golaghata Road, Dakshindari", addressLocality: "Kolkata", addressRegion: "West Bengal", postalCode: "700048", addressCountry: "IN" },
   geo: { "@type": "GeoCoordinates", latitude: 22.5965, longitude: 88.4037 },
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", reviewCount: "200" },
+  // NOTE: aggregateRating intentionally omitted until real, on-page reviews exist.
+  // Re-add { "@type": "AggregateRating", ratingValue, reviewCount } only when the
+  // matching reviews are displayed on the site, or Google may issue a manual penalty.
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

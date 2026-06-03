@@ -127,7 +127,7 @@ export default function HomePage() {
               key={i}
               className={`py-11 px-8 text-center ${i < 3 ? "border-r border-line" : ""} ${i >= 2 ? "border-t md:border-t-0 border-line" : ""}`}
             >
-              <div className="font-serif text-[clamp(36px,5vw,52px)] font-light text-gold-bright leading-none">{val}</div>
+              <div className="font-serif text-[clamp(36px,5vw,52px)] font-light text-gold leading-none">{val}</div>
               <div className="text-[11px] tracking-[2px] uppercase text-cream-dim mt-3">{label}</div>
             </div>
           ))}
@@ -243,7 +243,7 @@ export default function HomePage() {
                     <div className="flex gap-8 pt-5 border-t border-line">
                       {v.capacity.map((c) => (
                         <div key={c.label}>
-                          <div className="font-serif text-2xl text-gold-bright font-light leading-none">{c.floating}</div>
+                          <div className="font-serif text-2xl text-gold font-light leading-none">{c.floating}</div>
                           <div className="text-[10px] tracking-[1.5px] uppercase text-cream-dim mt-1.5">{c.label} Floating</div>
                         </div>
                       ))}

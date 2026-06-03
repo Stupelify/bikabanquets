@@ -21,8 +21,22 @@ const faqs = [
 ];
 
 export default function ContactPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Header */}
       <section className="pt-48 pb-16 max-w-6xl mx-auto px-10">
         <Reveal>
@@ -97,15 +111,15 @@ export default function ContactPage() {
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between items-center py-2 border-b border-line">
                     <span className="text-cream-dim">Vegetarian menu</span>
-                    <span className="font-serif text-gold-bright">from ₹700<span className="text-xs text-cream-dim">/plate</span></span>
+                    <span className="font-serif text-gold">from ₹700<span className="text-xs text-cream-dim">/plate</span></span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-line">
                     <span className="text-cream-dim">Non-vegetarian menu</span>
-                    <span className="font-serif text-gold-bright">from ₹1,300<span className="text-xs text-cream-dim">/plate</span></span>
+                    <span className="font-serif text-gold">from ₹1,300<span className="text-xs text-cream-dim">/plate</span></span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-line">
                     <span className="text-cream-dim">Booking advance</span>
-                    <span className="font-serif text-gold-bright">50%</span>
+                    <span className="font-serif text-gold">50%</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-cream-dim">Event slots</span>

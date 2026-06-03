@@ -74,7 +74,7 @@ export default function VenuesPage() {
               <div className="flex gap-10 py-6 border-y border-line mb-8">
                 {v.capacity.map((c) => (
                   <div key={c.label}>
-                    <div className="font-serif text-3xl text-gold-bright font-light leading-none">{c.floating}</div>
+                    <div className="font-serif text-3xl text-gold font-light leading-none">{c.floating}</div>
                     <div className="text-[10px] tracking-[1.5px] uppercase text-cream-dim mt-2">{c.label ?? "Max"} Floating</div>
                     <div className="font-serif text-lg text-cream font-light mt-1">{c.seated} seated</div>
                   </div>

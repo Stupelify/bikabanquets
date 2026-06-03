@@ -171,10 +171,10 @@ export const venues: Venue[] = [
     slug: "howrah",
     brand: "Bika Rangoli",
     displayName: "Bika Rangoli — Howrah",
-    tagline: "Elegant Venue on the West Bank",
-    address: "Howrah, West Bengal",
-    addressShort: "Howrah, West Bengal",
-    mapUrl: "https://maps.google.com/?q=Bika+Rangoli+Howrah+West+Bengal",
+    tagline: "Elegant Venue in Belurmath",
+    address: "212 Girish Ghosh Road, Belurmath, Howrah 711202",
+    addressShort: "Belurmath, Howrah",
+    mapUrl: "https://maps.google.com/?q=Bika+Rangoli+212+Girish+Ghosh+Road+Belurmath+Howrah+711202",
     phone: "+918961333313",
     capacity: [
       { seated: 150, floating: 250, label: "Main Hall" },
@@ -203,15 +203,15 @@ export const venues: Venue[] = [
     ],
     faqs: [
       {
-        q: "How do I reach the Howrah venue from Kolkata?",
-        a: "The venue is accessible via Howrah Bridge and Vidyasagar Setu. Please contact us for the exact address and directions.",
+        q: "Where exactly is the Howrah venue and how do I reach it?",
+        a: "Bika Rangoli is at 212 Girish Ghosh Road, Belurmath, Howrah 711202 — close to Belur Math and Bally, on the west bank of the Hooghly. It is easily reached via the Vivekananda Setu (Bally Bridge), Nivedita Setu and Belur railway station.",
       },
     ],
     schema: {
-      latitude: 22.5958,
-      longitude: 88.3164,
-      postalCode: "711101",
-      streetAddress: "Howrah",
+      latitude: 22.6293,
+      longitude: 88.3547,
+      postalCode: "711202",
+      streetAddress: "212 Girish Ghosh Road, Belurmath",
     },
   },
 ];

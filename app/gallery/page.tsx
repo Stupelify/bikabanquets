@@ -79,7 +79,7 @@ export default function GalleryPage() {
                 Book a Site Visit
               </Link>
               <a
-                href="https://wa.me/918961333313?text=Hi%20Bika%20Banquets%2C%20can%20you%20share%20more%20photos%20of%20your%20venue%3F"
+                href="https://wa.me/916230325532?text=Hi%20Bika%20Banquets%2C%20can%20you%20share%20more%20photos%20of%20your%20venue%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 border border-line-strong text-ink px-8 py-4 rounded-full text-xs tracking-widest uppercase font-light hover:border-gold hover:text-gold transition-all duration-300"
