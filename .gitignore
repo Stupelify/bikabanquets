@@ -1,6 +1,10 @@
 node_modules/
 .next/
 
+# Local env files (secrets live here — never commit)
+.env
+.env*.local
+
 # Media tool secrets / outputs — never commit
 tools/credentials.json
 tools/token.json
