@@ -92,7 +92,7 @@ export default function ContactPage() {
 
             {/* Pricing snapshot */}
             <Reveal delay={2}>
-              <div className="border border-line rounded-sm p-6 bg-bg-warm">
+              <div id="pricing" className="scroll-mt-28 border border-line rounded-sm p-6 bg-bg-warm">
                 <h3 className="font-serif font-light text-xl mb-5">Indicative Pricing</h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between items-center py-2 border-b border-line">

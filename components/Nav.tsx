@@ -8,7 +8,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/venues", label: "Venues" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/contact#pricing", label: "Pricing" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -17,8 +17,10 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  // hero pages have a dark image behind the nav at the top
-  const overHero = pathname === "/" || pathname === "/venues" || pathname === "/gallery" || pathname === "/contact" || pathname?.startsWith("/venues/");
+  // Only the homepage and individual venue pages have a dark hero image behind
+  // the nav. /venues, /gallery and /contact open on the light ivory background,
+  // so they must use dark nav text — otherwise the white logo/links disappear.
+  const overHero = pathname === "/" || (pathname?.startsWith("/venues/") ?? false);
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60);

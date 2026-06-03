@@ -25,7 +25,7 @@ const stats = [
   { val: "700+", label: "Max Guests" },
   { val: "3",    label: "Locations" },
   { val: "1000+",label: "Events Hosted" },
-  { val: "9+",   label: "Years of Excellence" },
+  { val: `${new Date().getFullYear() - 2016}+`, label: "Years of Excellence" },
 ];
 
 const galleryImages = [

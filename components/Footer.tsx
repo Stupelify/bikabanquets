@@ -75,13 +75,13 @@ export default function Footer() {
               <li><a href="tel:+918961333313" className="text-sm text-cream-dim hover:text-gold transition-colors">+91 89613 33313</a></li>
               <li><a href="mailto:contact@bikabanquets.com" className="text-sm text-cream-dim hover:text-gold transition-colors">contact@bikabanquets.com</a></li>
               <li><Link href="/contact" className="text-sm text-cream-dim hover:text-gold transition-colors">Book a Site Visit</Link></li>
-              <li><Link href="/#faq" className="text-sm text-cream-dim hover:text-gold transition-colors">FAQ</Link></li>
+              <li><Link href="/contact#faq" className="text-sm text-cream-dim hover:text-gold transition-colors">FAQ</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-line pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-cream-dim/50">© 2025 Bika Banquets. All rights reserved.</p>
+          <p className="text-xs text-cream-dim/50">© {new Date().getFullYear()} Bika Banquets. All rights reserved.</p>
           <p className="text-xs text-cream-dim/50">Golaghata · Baguiati · Howrah — Kolkata, West Bengal</p>
         </div>
       </div>
