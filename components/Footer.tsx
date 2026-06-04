@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,9 +8,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 mb-14">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="font-serif text-2xl text-cream">
-              Bika <em className="italic text-gold">Banquets</em>
-            </div>
+            <Image
+              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=300/MBlLcEqY2yw3y2EF/1-2-removebg-scaled-e1752152009924-7iV2qZXAcVUCou9o.png"
+              alt="Bika Banquets"
+              width={150}
+              height={44}
+              className="h-10 w-auto object-contain"
+            />
             <p className="text-sm text-cream-dim leading-relaxed mt-4 max-w-xs">
               Premier event venues and catering across Kolkata since 2016.
               Creating unforgettable celebrations at Golaghata, Baguiati and Howrah.

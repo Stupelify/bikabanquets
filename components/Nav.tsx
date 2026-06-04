@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const links = [
@@ -48,8 +49,15 @@ export default function Nav() {
           scrolled ? "py-3 bg-bg/90 backdrop-blur-md border-b border-line shadow-[0_2px_20px_rgba(43,38,32,0.06)]" : "py-5 md:py-6"
         }`}
       >
-        <Link href="/" className={`font-serif text-2xl font-light tracking-wide transition-colors ${logoColor}`}>
-          Bika <em className="italic" style={{ fontStyle: "italic" }}><span className={logoAccent}>Banquets</span></em>
+        <Link href="/" aria-label="Bika Banquets — Home" className="flex items-center">
+          <Image
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=300/MBlLcEqY2yw3y2EF/1-2-removebg-scaled-e1752152009924-7iV2qZXAcVUCou9o.png"
+            alt="Bika Banquets"
+            width={150}
+            height={44}
+            priority
+            className={`h-10 w-auto object-contain transition-all duration-300 ${light ? "brightness-0 invert" : ""}`}
+          />
         </Link>
 
         <ul className="hidden lg:flex items-center gap-10 list-none">
