@@ -352,6 +352,73 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── HOW IT WORKS ── */}
+      <section className="py-36 max-w-6xl mx-auto px-10">
+        <Reveal>
+          <span className="inline-flex items-center gap-4 text-[11px] tracking-[4px] uppercase text-gold font-medium">
+            <span className="w-7 h-px bg-gold inline-block" />
+            Simple Process
+          </span>
+          <h2 className="font-serif font-light text-[clamp(34px,4.5vw,60px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-16">
+            How Booking <em className="italic text-gold">Works</em>
+          </h2>
+        </Reveal>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-line">
+          {[
+            {
+              step: "01",
+              title: "Send an Enquiry",
+              desc: "Fill out our contact form or WhatsApp us with your event type, date and approximate guest count.",
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+              ),
+            },
+            {
+              step: "02",
+              title: "Tour the Venue",
+              desc: "Visit us at your preferred location — we walk you through the hall, catering options and décor packages.",
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+              ),
+            },
+            {
+              step: "03",
+              title: "Confirm Your Date",
+              desc: "Lock in your date with a 50% advance. We finalise menus, layout and décor details in a follow-up call.",
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              ),
+            },
+            {
+              step: "04",
+              title: "Celebrate, We Handle Everything",
+              desc: "On the day, our team manages setup, service and breakdown — you and your guests simply celebrate.",
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" /></svg>
+              ),
+            },
+          ].map(({ step, title, desc, icon }, i) => (
+            <Reveal key={step} delay={(i % 4) as 0 | 1 | 2 | 3} className={`relative p-12 group hover:bg-bg-warm transition-colors duration-300 ${i < 3 ? "border-r border-line" : ""}`}>
+              <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+              <div className="w-12 h-12 rounded-full border border-line group-hover:border-gold/60 flex items-center justify-center text-gold mb-8 transition-colors duration-300">
+                {icon}
+              </div>
+              <div className="font-serif text-[64px] text-line/60 font-light leading-none absolute top-6 right-8 select-none group-hover:text-burgundy/10 transition-colors duration-300">{step}</div>
+              <h3 className="font-serif text-xl font-normal mb-3 leading-snug">{title}</h3>
+              <p className="text-sm text-cream-dim leading-[1.8]">{desc}</p>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal>
+          <div className="mt-10 text-center">
+            <Link href="/contact" className="inline-flex items-center gap-3 text-xs tracking-widest uppercase text-gold font-medium hover:gap-5 transition-all duration-300">
+              Start your enquiry today
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </Link>
+          </div>
+        </Reveal>
+      </section>
+
       {/* ── CTA STRIP ── */}
       <section className="py-28 max-w-6xl mx-auto px-10 text-center">
         <Reveal>
