@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import GalleryGrid from "@/components/GalleryGrid";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
@@ -42,30 +42,10 @@ export default function GalleryPage() {
         </Reveal>
       </section>
 
-      {/* Masonry-style gallery */}
+      {/* Masonry-style gallery with filters + lightbox */}
       <section className="pb-36 max-w-6xl mx-auto px-10">
         <Reveal>
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 space-y-3">
-            {images.map((img, i) => (
-              <div
-                key={i}
-                className={`relative overflow-hidden rounded-sm group cursor-pointer break-inside-avoid ${img.wide ? "aspect-[16/10]" : "aspect-[4/3]"}`}
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-400" />
-                <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
-                  <span className="text-[10px] tracking-[2px] uppercase text-gold-bright block mb-1">{img.venue} · {img.category}</span>
-                  <span className="text-sm text-white font-light">{img.caption}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+          <GalleryGrid images={images} />
         </Reveal>
 
         {/* Note about more photos */}
