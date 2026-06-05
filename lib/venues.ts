@@ -36,7 +36,7 @@ export const venues: Venue[] = [
     displayName: "Bika Banquets — Golaghata",
     tagline: "Flagship Venue",
     city: "Kolkata",
-    address: "76/1 Golaghata Road, Dakshindari, Kolkata 700048",
+    address: "76 Golaghata Road, Dakshindari, South Dumdum, Kolkata 700048",
     addressShort: "Golaghata, Kolkata",
     mapUrl: "https://maps.google.com/?q=Bika+Banquets+Golaghata+Dakshindari+Kolkata",
     phone: "+918961333313",
@@ -58,29 +58,44 @@ export const venues: Venue[] = [
     longDescription:
       "Bika Banquets Golaghata is our original and flagship venue, operating since 2016 in the heart of Dakshindari. The main hall comfortably seats up to 400 guests and handles 600 in a floating arrangement, making it one of the largest banquet spaces in North Kolkata. The fully centralised air-conditioning system, coupled with 100% power backup, ensures a comfortable environment regardless of the season. A dedicated mandap stage, full PA system, projection screen, and LED lighting rig make it equally suited to traditional Bengali wedding ceremonies, reception galas, and corporate functions.",
     heroImage: {
-      src: `${CDN},w=2000/MBlLcEqY2yw3y2EF/115a6487-ovJFGLVkQmHn96bH.JPG`,
-      alt: "Grand banquet hall at Bika Banquets Golaghata, Dakshindari, Kolkata — decorated for a wedding reception",
+      src: "/images/venues/golaghata/golaghata-hero-19.jpg",
+      alt: "Grand decorated banquet hall with chairs and chandeliers at Bika Banquets, Golaghata, Kolkata",
     },
     galleryImages: [
       {
-        src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03288-WRXbWDLxQ61W4dfF.JPG`,
-        alt: "Banquet hall set with dining tables and chairs at Bika Banquets Golaghata",
-        caption: "Main Hall Setup",
+        src: "/images/venues/golaghata/golaghata-hero-16.jpg",
+        alt: "Wide banquet hall and wedding stage at Bika Banquets, Golaghata, Kolkata",
+        caption: "Stage & Hall",
       },
       {
-        src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03314-4jZHMRzDhNKgTfVR.JPG`,
-        alt: "Decorated wedding stage at Bika Banquets Golaghata Kolkata",
-        caption: "Wedding Stage",
+        src: "/images/venues/golaghata/golaghata-decor-05.jpg",
+        alt: "Lounge-style wedding stage with chandelier at Bika Banquets, Golaghata, Kolkata",
+        caption: "Lounge Stage",
       },
       {
-        src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc05317-6W1igokk7BwFIn1u.JPG`,
-        alt: "Event décor and floral setup at Bika Banquets",
-        caption: "Floral Décor",
+        src: "/images/venues/golaghata/golaghata-hero-23.jpg",
+        alt: "Decorated reception stage at Bika Banquets, Golaghata, Kolkata",
+        caption: "Reception Stage",
       },
       {
-        src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/1-126-mklv3kpxZeF8CDys.JPG`,
-        alt: "Celebration in progress at Bika Banquets Golaghata",
-        caption: "Live Celebration",
+        src: "/images/venues/golaghata/golaghata-decor-02.jpg",
+        alt: "Signature green floral backdrop at Bika Banquets, Golaghata, Kolkata",
+        caption: "Signature Floral Backdrop",
+      },
+      {
+        src: "/images/venues/golaghata/golaghata-decor-04.jpg",
+        alt: "Floral mandap décor with white pillars at Bika Banquets, Golaghata, Kolkata",
+        caption: "Mandap Décor",
+      },
+      {
+        src: "/images/venues/golaghata/golaghata-decor-10.jpg",
+        alt: "Floral pillars and centrepiece at Bika Banquets, Golaghata, Kolkata",
+        caption: "Floral Pillars",
+      },
+      {
+        src: "/images/venues/golaghata/golaghata-hero-20.jpg",
+        alt: "Grand ballroom with gold ceiling and aisle at Bika Banquets, Golaghata, Kolkata",
+        caption: "Grand Ballroom",
       },
     ],
     faqs: [
@@ -101,7 +116,7 @@ export const venues: Venue[] = [
       latitude: 22.5965,
       longitude: 88.4037,
       postalCode: "700048",
-      streetAddress: "76/1 Golaghata Road, Dakshindari",
+      streetAddress: "76 Golaghata Road, Dakshindari",
     },
   },
   {
@@ -133,24 +148,44 @@ export const venues: Venue[] = [
     longDescription:
       "Bika Rythm at Baguiati is our most versatile venue, offering two distinct event spaces under one roof. The main indoor air-conditioned hall accommodates up to 700 guests in a floating arrangement and is ideal for wedding receptions, corporate dinners and birthday celebrations. The adjoining open terrace adds another dimension — perfect for Sangeet nights, Mehndi ceremonies and sundowner events. Located on VIP Road, Raghunathpur, the venue is easily accessible from the Dum Dum Metro, Netaji Subhas Chandra Bose International Airport and all of North Kolkata.",
     heroImage: {
-      src: `${CDN},w=2000/MBlLcEqY2yw3y2EF/dsc00169-HvbTjGsoDPzlAoxy.JPG`,
-      alt: "Interior of Bika Rythm banquet hall at VIP Road, Baguiati, Kolkata",
+      src: "/images/venues/baguiati/baguiati-hero-14.jpg",
+      alt: "Symmetric floral wedding mandap with orange carpet at Bika Rythm, Baguiati, Kolkata",
     },
     galleryImages: [
       {
-        src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc00049-fYweGYuBJPDT148v.JPG`,
-        alt: "Hall arrangement at Bika Rythm Baguiati for a wedding reception",
-        caption: "Indoor Hall",
+        src: "/images/venues/baguiati/baguiati-hero-15.jpg",
+        alt: "Golden wedding mandap with floral carpet at Bika Rythm, Baguiati, Kolkata",
+        caption: "Wedding Mandap",
       },
       {
-        src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03447-Qouqi7rehbd1q8Pg.JPG`,
-        alt: "Event in progress at Bika Rythm Baguiati",
-        caption: "Live Event",
+        src: "/images/venues/baguiati/baguiati-decor-02.jpg",
+        alt: "Rose floral arch with hanging lights at Bika Rythm, Baguiati, Kolkata",
+        caption: "Floral Arch",
       },
       {
-        src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03268-rXHN2kHdCDZJ77Vn.JPG`,
-        alt: "Décor and catering setup at Bika Rythm",
-        caption: "Décor Setup",
+        src: "/images/venues/baguiati/baguiati-hero-13.jpg",
+        alt: "Gold and maroon reception stage at Bika Rythm, Baguiati, Kolkata",
+        caption: "Reception Stage",
+      },
+      {
+        src: "/images/venues/baguiati/baguiati-decor-07.jpg",
+        alt: "Mandap stage with floral rangoli carpet at Bika Rythm, Baguiati, Kolkata",
+        caption: "Mandap & Rangoli",
+      },
+      {
+        src: "/images/venues/baguiati/baguiati-hero-18.jpg",
+        alt: "Pink lounge seating with drapes at Bika Rythm, Baguiati, Kolkata",
+        caption: "Lounge Seating",
+      },
+      {
+        src: "/images/venues/baguiati/baguiati-hero-21.jpg",
+        alt: "Ornate golden wedding mandap at Bika Rythm, Baguiati, Kolkata",
+        caption: "Ornate Mandap",
+      },
+      {
+        src: "/images/venues/baguiati/baguiati-decor-08.jpg",
+        alt: "Hanging floral strands over the stage at Bika Rythm, Baguiati, Kolkata",
+        caption: "Hanging Florals",
       },
     ],
     faqs: [
@@ -174,11 +209,11 @@ export const venues: Venue[] = [
     slug: "howrah",
     brand: "Bika Rangoli",
     displayName: "Bika Rangoli — Howrah",
-    tagline: "Elegant Venue in Belurmath",
+    tagline: "Elegant Venue in Belur",
     city: "Howrah",
-    address: "212 Girish Ghosh Road, Belurmath, Howrah 711202",
-    addressShort: "Belurmath, Howrah",
-    mapUrl: "https://maps.google.com/?q=Bika+Rangoli+212+Girish+Ghosh+Road+Belurmath+Howrah+711202",
+    address: "Forum Rangoli, 212 Girish Ghosh Road, Belur, Howrah 711202",
+    addressShort: "Belur, Howrah",
+    mapUrl: "https://maps.google.com/?q=Forum+Rangoli+212+Girish+Ghosh+Road+Belur+Howrah+711202",
     phone: "+918961333313",
     capacity: [
       { seated: 150, floating: 250, label: "Main Hall" },
@@ -195,27 +230,142 @@ export const venues: Venue[] = [
     longDescription:
       "Bika Rangoli in Howrah extends our footprint to the west bank of the Hooghly, offering the same quality of catering, décor and event management that Bika Banquets is known for in North Kolkata. An intimate venue ideal for close-knit family celebrations, ring ceremonies, anniversaries and smaller corporate gatherings.",
     heroImage: {
-      src: `${CDN},w=2000/MBlLcEqY2yw3y2EF/dsc03447-Qouqi7rehbd1q8Pg.JPG`,
-      alt: "Bika Rangoli banquet hall in Howrah — wedding and reception venue in West Bengal",
+      src: "/images/venues/howrah/howrah-hero-06.jpg",
+      alt: "Wedding stage with ring backdrop and rows of chairs at Bika Rangoli, Belur, Howrah",
     },
     galleryImages: [
       {
-        src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc05317-6W1igokk7BwFIn1u.JPG`,
-        alt: "Decorated event hall at Bika Rangoli Howrah",
-        caption: "Hall Décor",
+        src: "/images/venues/howrah/howrah-hero-07.jpg",
+        alt: "Golden double-arch wedding stage at Bika Rangoli, Belur, Howrah",
+        caption: "Golden Stage",
+      },
+      {
+        src: "/images/venues/howrah/howrah-hero-12.jpg",
+        alt: "Decorated stage and banquet hall with chairs at Bika Rangoli, Belur, Howrah",
+        caption: "Stage & Hall",
+      },
+      {
+        src: "/images/venues/howrah/howrah-hero-22.jpg",
+        alt: "Banquet hall set with round dining tables at Bika Rangoli, Belur, Howrah",
+        caption: "Banquet Dining",
+      },
+      {
+        src: "/images/venues/howrah/howrah-hero-05.jpg",
+        alt: "Air-conditioned banquet hall with chandeliers at Bika Rangoli, Belur, Howrah",
+        caption: "Banquet Hall",
+      },
+      {
+        src: "/images/venues/howrah/howrah-hero-18.jpg",
+        alt: "Banquet hall with columns, chairs and stage at Bika Rangoli, Belur, Howrah",
+        caption: "Hall & Stage",
+      },
+      {
+        src: "/images/venues/howrah/howrah-decor-02.jpg",
+        alt: "Golden mandap décor with drapes at Bika Rangoli, Belur, Howrah",
+        caption: "Mandap Décor",
+      },
+      {
+        src: "/images/venues/howrah/howrah-hero-13.jpg",
+        alt: "Ring-backdrop wedding stage with seating at Bika Rangoli, Belur, Howrah",
+        caption: "Ring Stage",
       },
     ],
     faqs: [
       {
         q: "Where exactly is the Howrah venue and how do I reach it?",
-        a: "Bika Rangoli is at 212 Girish Ghosh Road, Belurmath, Howrah 711202 — close to Belur Math and Bally, on the west bank of the Hooghly. It is easily reached via the Vivekananda Setu (Bally Bridge), Nivedita Setu and Belur railway station.",
+        a: "Bika Rangoli (Forum Rangoli) is at 212 Girish Ghosh Road, Belur, Howrah 711202 — close to Belur Math and Bally, on the west bank of the Hooghly. It is easily reached via the Vivekananda Setu (Bally Bridge), Nivedita Setu and Belur railway station.",
       },
     ],
     schema: {
       latitude: 22.6293,
       longitude: 88.3547,
       postalCode: "711202",
-      streetAddress: "212 Girish Ghosh Road, Belurmath",
+      streetAddress: "212 Girish Ghosh Road, Belur",
+    },
+  },
+  {
+    slug: "divinity",
+    brand: "Divinity Pavilion",
+    displayName: "Divinity Pavilion — Lake Town",
+    tagline: "Premium Banquet near Sreebhumi",
+    city: "Kolkata",
+    address: "241 Golaghata Road, Sreebhumi, Lake Town, South Dumdum, Kolkata 700048",
+    addressShort: "Lake Town, Kolkata",
+    mapUrl: "https://maps.google.com/?q=Divinity+Pavilion+241+Golaghata+Road+Sreebhumi+Lake+Town+Kolkata",
+    phone: "+918961333313",
+    // TODO: confirm exact capacity & amenities with client (values below are estimates)
+    capacity: [
+      { seated: 350, floating: 550, label: "Banquet Hall" },
+    ],
+    amenities: [
+      "Centralised AC",
+      "Valet Parking",
+      "Stage & Lighting",
+      "Bridal Room",
+      "Power Backup",
+      "In-House Catering",
+      "In-House Décor",
+    ],
+    description:
+      "A premium banquet pavilion at Sreebhumi, Lake Town — elegant, centrally air-conditioned interiors with bespoke stage and floral décor for weddings, receptions and corporate events.",
+    longDescription:
+      "Divinity Pavilion brings the Bika standard to Lake Town, moments from the landmark Sreebhumi on Golaghata Road. The centrally air-conditioned hall is designed for grand weddings and receptions, with a versatile stage that our in-house décor team transforms for everything from traditional Bengali ceremonies to contemporary sangeet nights. With in-house catering, full power backup and easy access from VIP Road, the Lake Town Metro corridor and North Kolkata, Divinity Pavilion is a refined choice for celebrations of every scale.",
+    heroImage: {
+      src: "/images/venues/divinity/divinity-hero-13.jpg",
+      alt: "Banquet hall with pink-draped chairs and a gold stage at Divinity Pavilion, Lake Town, Kolkata",
+    },
+    galleryImages: [
+      {
+        src: "/images/venues/divinity/divinity-hero-10.jpg",
+        alt: "Candle-lit golden wedding mandap at Divinity Pavilion, Lake Town, Kolkata",
+        caption: "Candle-lit Mandap",
+      },
+      {
+        src: "/images/venues/divinity/divinity-hero-20.jpg",
+        alt: "White and green drape stage with hanging florals at Divinity Pavilion, Lake Town, Kolkata",
+        caption: "Drape Stage",
+      },
+      {
+        src: "/images/venues/divinity/divinity-hero-05.jpg",
+        alt: "Banquet hall set with chairs and green aisle carpet at Divinity Pavilion, Lake Town, Kolkata",
+        caption: "Banquet Hall",
+      },
+      {
+        src: "/images/venues/divinity/divinity-hero-14.jpg",
+        alt: "Ornate golden arch wedding mandap at Divinity Pavilion, Lake Town, Kolkata",
+        caption: "Golden Arch",
+      },
+      {
+        src: "/images/venues/divinity/divinity-hero-06.jpg",
+        alt: "Reception stage with red carpet and floral border at Divinity Pavilion, Lake Town, Kolkata",
+        caption: "Reception Stage",
+      },
+      {
+        src: "/images/venues/divinity/divinity-food-02.jpg",
+        alt: "In-house catering and live food station at Divinity Pavilion, Lake Town, Kolkata",
+        caption: "Catering Station",
+      },
+      {
+        src: "/images/venues/divinity/divinity-hero-23.jpg",
+        alt: "Golden double-arch garden stage lit at night at Divinity Pavilion, Lake Town, Kolkata",
+        caption: "Garden Stage",
+      },
+    ],
+    faqs: [
+      {
+        q: "Where is Divinity Pavilion located?",
+        a: "Divinity Pavilion is at 241 Golaghata Road, Sreebhumi, Lake Town, Kolkata 700048 — close to the Sreebhumi landmark and easily reached from VIP Road, Ultadanga and the EM Bypass.",
+      },
+      {
+        q: "Is Divinity Pavilion air-conditioned?",
+        a: "Yes — the hall is centrally air-conditioned, with full power backup and in-house catering and décor teams.",
+      },
+    ],
+    schema: {
+      latitude: 22.6010,
+      longitude: 88.4050,
+      postalCode: "700048",
+      streetAddress: "241 Golaghata Road, Sreebhumi, Lake Town",
     },
   },
   {

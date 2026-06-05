@@ -9,18 +9,27 @@ export const metadata: Metadata = {
     "Browse our gallery of weddings, receptions, sangeet nights, corporate events and birthday celebrations hosted at Bika Banquets across Golaghata, Baguiati and Howrah, Kolkata.",
 };
 
-const CDN = "https://assets.zyrosite.com/cdn-cgi/image/format=auto";
-
 const images = [
-  { src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03314-4jZHMRzDhNKgTfVR.JPG`, alt: "Decorated wedding stage and reception setup at Bika Banquets Golaghata Kolkata", caption: "Wedding Reception", venue: "Golaghata", category: "Weddings", wide: true },
-  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/dsc05317-6W1igokk7BwFIn1u.JPG`,   alt: "Elegant floral décor at a celebration hosted at Bika Banquets Kolkata", caption: "Floral Décor Setup", venue: "Golaghata", category: "Décor", wide: false },
-  { src: `${CDN},w=800/MBlLcEqY2yw3y2EF/dsc00049-fYweGYuBJPDT148v.JPG`,   alt: "Banquet hall arrangement for a reception at Bika Rythm Baguiati", caption: "Hall Setup", venue: "Baguiati", category: "Venues", wide: false },
-  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/1-126-mklv3kpxZeF8CDys.JPG`,     alt: "Live celebration and event in progress at Bika Banquets", caption: "Live Celebration", venue: "Golaghata", category: "Events", wide: false },
-  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/dsc00169-HvbTjGsoDPzlAoxy.JPG`,  alt: "Interior view of Bika Rythm banquet hall, VIP Road, Baguiati, Kolkata", caption: "Bika Rythm Interior", venue: "Baguiati", category: "Venues", wide: true },
-  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/115a6487-ovJFGLVkQmHn96bH.JPG`,  alt: "Grand banquet hall at Bika Banquets Golaghata Dakshindari Kolkata", caption: "Grand Hall", venue: "Golaghata", category: "Venues", wide: false },
-  { src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03447-Qouqi7rehbd1q8Pg.JPG`, alt: "Event reception setup at Bika Rangoli Howrah West Bengal", caption: "Bika Rangoli Setup", venue: "Howrah", category: "Events", wide: false },
-  { src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03288-WRXbWDLxQ61W4dfF.JPG`, alt: "Dining hall set with tables and chairs at Bika Banquets Kolkata", caption: "Dining Setup", venue: "Golaghata", category: "Venues", wide: false },
-  { src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03268-rXHN2kHdCDZJ77Vn.JPG`, alt: "Décor and catering arrangement at Bika Banquets", caption: "Catering & Décor", venue: "Golaghata", category: "Catering", wide: true },
+  // Golaghata
+  { src: "/images/venues/golaghata/golaghata-hero-19.jpg", alt: "Grand banquet hall with chandeliers at Bika Banquets, Golaghata, Kolkata", caption: "Grand Hall", venue: "Golaghata", category: "Venues", wide: true },
+  { src: "/images/venues/golaghata/golaghata-decor-02.jpg", alt: "Signature green floral backdrop at Bika Banquets, Golaghata, Kolkata", caption: "Signature Backdrop", venue: "Golaghata", category: "Décor", wide: false },
+  { src: "/images/venues/golaghata/golaghata-hero-23.jpg", alt: "Decorated reception stage at Bika Banquets, Golaghata, Kolkata", caption: "Reception Stage", venue: "Golaghata", category: "Weddings", wide: false },
+  { src: "/images/venues/golaghata/golaghata-decor-10.jpg", alt: "Floral pillars and centrepiece at Bika Banquets, Golaghata, Kolkata", caption: "Floral Pillars", venue: "Golaghata", category: "Décor", wide: false },
+  // Baguiati
+  { src: "/images/venues/baguiati/baguiati-hero-14.jpg", alt: "Symmetric floral wedding mandap at Bika Rythm, Baguiati, Kolkata", caption: "Wedding Mandap", venue: "Baguiati", category: "Weddings", wide: true },
+  { src: "/images/venues/baguiati/baguiati-decor-02.jpg", alt: "Rose floral arch with hanging lights at Bika Rythm, Baguiati, Kolkata", caption: "Floral Arch", venue: "Baguiati", category: "Décor", wide: false },
+  { src: "/images/venues/baguiati/baguiati-hero-18.jpg", alt: "Pink lounge seating with drapes at Bika Rythm, Baguiati, Kolkata", caption: "Lounge Seating", venue: "Baguiati", category: "Venues", wide: false },
+  { src: "/images/venues/baguiati/baguiati-hero-21.jpg", alt: "Ornate golden wedding mandap at Bika Rythm, Baguiati, Kolkata", caption: "Ornate Mandap", venue: "Baguiati", category: "Weddings", wide: false },
+  // Howrah
+  { src: "/images/venues/howrah/howrah-hero-07.jpg", alt: "Golden double-arch wedding stage at Bika Rangoli, Belur, Howrah", caption: "Golden Stage", venue: "Howrah", category: "Weddings", wide: false },
+  { src: "/images/venues/howrah/howrah-hero-22.jpg", alt: "Banquet hall set with round dining tables at Bika Rangoli, Belur, Howrah", caption: "Banquet Dining", venue: "Howrah", category: "Venues", wide: true },
+  { src: "/images/venues/howrah/howrah-hero-05.jpg", alt: "Air-conditioned banquet hall with chandeliers at Bika Rangoli, Belur, Howrah", caption: "Banquet Hall", venue: "Howrah", category: "Venues", wide: false },
+  { src: "/images/venues/howrah/howrah-decor-02.jpg", alt: "Golden mandap décor with drapes at Bika Rangoli, Belur, Howrah", caption: "Mandap Décor", venue: "Howrah", category: "Décor", wide: false },
+  // Divinity Pavilion
+  { src: "/images/venues/divinity/divinity-hero-13.jpg", alt: "Banquet hall with pink-draped chairs and gold stage at Divinity Pavilion, Lake Town, Kolkata", caption: "Banquet Hall", venue: "Divinity", category: "Venues", wide: false },
+  { src: "/images/venues/divinity/divinity-hero-10.jpg", alt: "Candle-lit golden mandap at Divinity Pavilion, Lake Town, Kolkata", caption: "Candle-lit Mandap", venue: "Divinity", category: "Weddings", wide: false },
+  { src: "/images/venues/divinity/divinity-food-02.jpg", alt: "In-house catering and live food station at Divinity Pavilion, Lake Town, Kolkata", caption: "Catering Station", venue: "Divinity", category: "Catering", wide: true },
+  { src: "/images/venues/divinity/divinity-hero-20.jpg", alt: "White and green drape stage with hanging florals at Divinity Pavilion, Lake Town, Kolkata", caption: "Drape Stage", venue: "Divinity", category: "Décor", wide: false },
 ];
 
 export default function GalleryPage() {

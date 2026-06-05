@@ -51,6 +51,7 @@ export default function Footer() {
                 { href: "/venues/golaghata", label: "Golaghata" },
                 { href: "/venues/baguiati", label: "Baguiati · Bika Rythm" },
                 { href: "/venues/howrah", label: "Howrah · Bika Rangoli" },
+                { href: "/venues/divinity", label: "Lake Town · Divinity Pavilion" },
                 { href: "/venues/siliguri", label: "Siliguri · Four Vedas" },
               ].map(({ href, label }) => (
                 <li key={href}>

@@ -10,7 +10,6 @@ export const metadata: Metadata = {
     "Bika Banquets offers premium wedding and event venues across Kolkata — Golaghata, Baguiati & Howrah. In-house catering from ₹700/plate, décor, valet parking for 150–700 guests. Book now.",
 };
 
-const CDN = "https://assets.zyrosite.com/cdn-cgi/image/format=auto";
 
 const services = [
   { num: "01", name: "Weddings & Receptions", desc: "Full-day packages with mandap, floral décor, bridal entry and multi-cuisine buffet — Bengali, Marwari and North Indian traditions welcomed.", tags: ["Bengali Weddings", "Marwari", "Reception"] },
@@ -29,12 +28,12 @@ const stats = [
 ];
 
 const galleryImages = [
-  { src: `${CDN},w=1100/MBlLcEqY2yw3y2EF/dsc03314-4jZHMRzDhNKgTfVR.JPG`, alt: "Decorated wedding stage at Bika Banquets Golaghata Kolkata", caption: "Wedding Reception · Golaghata", cls: "col-span-5 row-span-2" },
-  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/dsc05317-6W1igokk7BwFIn1u.JPG`,   alt: "Elegant floral event décor at Bika Banquets", caption: "Floral Décor", cls: "col-span-4 row-span-2" },
-  { src: `${CDN},w=800/MBlLcEqY2yw3y2EF/dsc00049-fYweGYuBJPDT148v.JPG`,   alt: "Banquet hall arrangement at Bika Rythm Baguiati", caption: "Hall Setup · Baguiati", cls: "col-span-3 row-span-2" },
-  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/1-126-mklv3kpxZeF8CDys.JPG`,     alt: "Celebration in progress at Bika Banquets", caption: "Live Celebration", cls: "col-span-4" },
-  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/dsc00169-HvbTjGsoDPzlAoxy.JPG`,  alt: "Interior of Bika Rythm venue, Baguiati Kolkata", caption: "Bika Rythm Interior", cls: "col-span-4" },
-  { src: `${CDN},w=900/MBlLcEqY2yw3y2EF/115a6487-ovJFGLVkQmHn96bH.JPG`,  alt: "Grand banquet hall at Bika Banquets Golaghata", caption: "Grand Hall · Golaghata", cls: "col-span-4" },
+  { src: "/images/venues/baguiati/baguiati-hero-14.jpg", alt: "Symmetric floral wedding mandap at Bika Rythm, Baguiati, Kolkata", caption: "Wedding Mandap · Baguiati", cls: "col-span-5 row-span-2" },
+  { src: "/images/venues/golaghata/golaghata-decor-02.jpg", alt: "Signature green floral backdrop at Bika Banquets, Golaghata, Kolkata", caption: "Signature Décor · Golaghata", cls: "col-span-4 row-span-2" },
+  { src: "/images/venues/howrah/howrah-hero-07.jpg", alt: "Golden double-arch wedding stage at Bika Rangoli, Belur, Howrah", caption: "Golden Stage · Howrah", cls: "col-span-3 row-span-2" },
+  { src: "/images/venues/divinity/divinity-hero-10.jpg", alt: "Candle-lit golden mandap at Divinity Pavilion, Lake Town, Kolkata", caption: "Candle-lit Mandap · Lake Town", cls: "col-span-4" },
+  { src: "/images/venues/golaghata/golaghata-hero-19.jpg", alt: "Grand banquet hall with chandeliers at Bika Banquets, Golaghata, Kolkata", caption: "Grand Hall · Golaghata", cls: "col-span-4" },
+  { src: "/images/venues/howrah/howrah-hero-22.jpg", alt: "Banquet hall set with round dining tables at Bika Rangoli, Belur, Howrah", caption: "Banquet Dining · Howrah", cls: "col-span-4" },
 ];
 
 export default function HomePage() {
@@ -44,8 +43,8 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={`${CDN},w=1600/MBlLcEqY2yw3y2EF/smp01053-lz0Jo3w4Q9TkR6GT.JPG`}
-            alt="Elegant banquet hall at Bika Banquets, Golaghata, Kolkata — decorated for a grand wedding reception"
+            src="/images/venues/baguiati/baguiati-hero-14.jpg"
+            alt="Elegant floral wedding mandap at Bika Banquets, Kolkata — decorated for a grand wedding reception"
             fill
             priority
             className="object-cover animate-slow-zoom"
@@ -140,8 +139,8 @@ export default function HomePage() {
           <Reveal className="relative">
             <div className="relative w-full aspect-[4/5] rounded-sm overflow-hidden">
               <Image
-                src={`${CDN},w=900/MBlLcEqY2yw3y2EF/dsc03288-WRXbWDLxQ61W4dfF.JPG`}
-                alt="Spacious banquet hall set with dining tables at Bika Banquets Kolkata"
+                src="/images/venues/golaghata/golaghata-decor-04.jpg"
+                alt="Floral mandap décor with white pillars at Bika Banquets, Golaghata, Kolkata"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -149,8 +148,8 @@ export default function HomePage() {
             </div>
             <div className="absolute bottom-[-40px] left-[-40px] w-[52%] aspect-square overflow-hidden border-[8px] border-bg shadow-2xl rounded-sm hidden md:block">
               <Image
-                src={`${CDN},w=600/MBlLcEqY2yw3y2EF/dsc03268-rXHN2kHdCDZJ77Vn.JPG`}
-                alt="Décor and event detail at Bika Banquets"
+                src="/images/venues/baguiati/baguiati-decor-07.jpg"
+                alt="Wedding mandap with floral rangoli carpet at Bika Rythm, Baguiati, Kolkata"
                 fill
                 className="object-cover"
                 sizes="25vw"
@@ -324,8 +323,8 @@ export default function HomePage() {
       <section className="relative py-0">
         <div className="relative min-h-[520px] flex items-center overflow-hidden">
           <Image
-            src={`${CDN},w=2000/MBlLcEqY2yw3y2EF/dsc03268-rXHN2kHdCDZJ77Vn.JPG`}
-            alt="In-house catering and dining setup at Bika Banquets Kolkata"
+            src="/images/venues/divinity/divinity-food-02.jpg"
+            alt="In-house catering and live food station at Bika Banquets, Kolkata"
             fill
             className="object-cover"
             sizes="100vw"
