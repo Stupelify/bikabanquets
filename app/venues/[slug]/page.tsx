@@ -51,7 +51,7 @@ export default async function VenuePage({ params }: Props) {
     address: {
       "@type": "PostalAddress",
       streetAddress: v.schema.streetAddress,
-      addressLocality: "Kolkata",
+      addressLocality: v.city,
       addressRegion: "West Bengal",
       postalCode: v.schema.postalCode,
       addressCountry: "IN",

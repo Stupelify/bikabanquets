@@ -16,8 +16,8 @@ export default function Footer() {
               className="h-10 w-auto object-contain"
             />
             <p className="text-sm text-cream-dim leading-relaxed mt-4 max-w-xs">
-              Premier event venues and catering across Kolkata since 2016.
-              Creating unforgettable celebrations at Golaghata, Baguiati and Howrah.
+              Premier event venues and catering since 2016.
+              Creating unforgettable celebrations across Kolkata, Howrah and Siliguri.
             </p>
             <div className="flex gap-3 mt-6">
               <a
@@ -51,6 +51,7 @@ export default function Footer() {
                 { href: "/venues/golaghata", label: "Golaghata" },
                 { href: "/venues/baguiati", label: "Baguiati · Bika Rythm" },
                 { href: "/venues/howrah", label: "Howrah · Bika Rangoli" },
+                { href: "/venues/siliguri", label: "Siliguri · Four Vedas" },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <Link href={href} className="text-sm text-cream-dim hover:text-gold transition-colors duration-300">
@@ -87,7 +88,7 @@ export default function Footer() {
 
         <div className="border-t border-line pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-cream-dim/50">© {new Date().getFullYear()} Bika Banquets. All rights reserved.</p>
-          <p className="text-xs text-cream-dim/50">Golaghata · Baguiati · Howrah — Kolkata, West Bengal</p>
+          <p className="text-xs text-cream-dim/50">Golaghata · Baguiati · Howrah · Siliguri — West Bengal</p>
         </div>
       </div>
     </footer>

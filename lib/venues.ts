@@ -7,6 +7,7 @@ export interface Venue {
   brand: string; // trade name e.g. "Bika Rythm"
   displayName: string;
   tagline: string;
+  city: string; // locality for SEO schema, e.g. "Kolkata" / "Siliguri"
   address: string;
   addressShort: string;
   mapUrl: string;
@@ -34,6 +35,7 @@ export const venues: Venue[] = [
     brand: "Bika Banquets",
     displayName: "Bika Banquets — Golaghata",
     tagline: "Flagship Venue",
+    city: "Kolkata",
     address: "76/1 Golaghata Road, Dakshindari, Kolkata 700048",
     addressShort: "Golaghata, Kolkata",
     mapUrl: "https://maps.google.com/?q=Bika+Banquets+Golaghata+Dakshindari+Kolkata",
@@ -107,6 +109,7 @@ export const venues: Venue[] = [
     brand: "Bika Rythm",
     displayName: "Bika Rythm — Baguiati",
     tagline: "Indoor Hall + Open Terrace",
+    city: "Kolkata",
     address: "2/4 VIP Road, Raghunathpur, Baguiati, Kolkata 700059",
     addressShort: "Baguiati, VIP Road",
     mapUrl: "https://maps.google.com/?q=Bika+Rythm+Baguiati+VIP+Road+Kolkata",
@@ -172,6 +175,7 @@ export const venues: Venue[] = [
     brand: "Bika Rangoli",
     displayName: "Bika Rangoli — Howrah",
     tagline: "Elegant Venue in Belurmath",
+    city: "Howrah",
     address: "212 Girish Ghosh Road, Belurmath, Howrah 711202",
     addressShort: "Belurmath, Howrah",
     mapUrl: "https://maps.google.com/?q=Bika+Rangoli+212+Girish+Ghosh+Road+Belurmath+Howrah+711202",
@@ -212,6 +216,61 @@ export const venues: Venue[] = [
       longitude: 88.3547,
       postalCode: "711202",
       streetAddress: "212 Girish Ghosh Road, Belurmath",
+    },
+  },
+  {
+    slug: "siliguri",
+    brand: "Four Vedas",
+    displayName: "Bika Banquets — Four Vedas, Siliguri",
+    tagline: "Banquets, Lawn & Resort in North Bengal",
+    city: "Siliguri",
+    address: "Deep Nagar, Panchkel Guri, Khaprail (Mirik) Road, Matigara, Siliguri 734010",
+    addressShort: "Matigara, Siliguri",
+    mapUrl: "https://maps.google.com/?q=The+Four+Vedas+Hotel+Resort+Matigara+Siliguri",
+    phone: "+918961333313",
+    capacity: [
+      { seated: 350, floating: 550, label: "Atharvan Hall" },
+      { seated: 1200, floating: 1800, label: "Kaiser Bagh Lawn" },
+    ],
+    amenities: [
+      "Grand AC Banquet Halls",
+      "1800-Capacity Open Lawn",
+      "Multiple Event Spaces",
+      "On-Site Resort Rooms",
+      "In-House Catering",
+      "In-House Décor",
+      "Valet Parking",
+      "Near Bagdogra Airport",
+    ],
+    description:
+      "Our North Bengal flagship — a resort-style venue in Matigara, Siliguri with the grand Atharvan hall, a sweeping 1,800-guest lawn and on-site accommodation. Made for destination weddings.",
+    longDescription:
+      "Bika Banquets at The Four Vedas brings our standard of celebration to North Bengal. Set in Matigara on the Khaprail (Mirik) Road, just minutes from Bagdogra Airport, this resort-style venue is purpose-built for large-scale and destination weddings. The flagship 'Atharvan' banquet hall seats up to 550 guests beside a lush green lawn, while the expansive 'Kaiser Bagh Lawn' can host gatherings of up to 1,800 for open-air receptions and sangeet nights. Two further spaces — the 'Tarang' hall (120 guests) overlooking the pool and the 'Presidency Lounge' party hall (60 guests) — make it equally suited to intimate functions. With on-site resort rooms for outstation guests, in-house catering and décor, Four Vedas is the complete wedding destination in Siliguri.",
+    // TODO: replace placeholder images below with The Four Vedas photos once uploaded to the CDN
+    heroImage: {
+      src: `${CDN},w=2000/MBlLcEqY2yw3y2EF/dsc05317-6W1igokk7BwFIn1u.JPG`,
+      alt: "Bika Banquets at The Four Vedas — banquet and lawn wedding venue in Matigara, Siliguri, West Bengal",
+    },
+    galleryImages: [],
+    faqs: [
+      {
+        q: "How far is the Siliguri venue from Bagdogra Airport?",
+        a: "The Four Vedas in Matigara is roughly 15–20 minutes (about 7 km) from Bagdogra International Airport, making it very convenient for outstation and destination-wedding guests.",
+      },
+      {
+        q: "Is on-site accommodation available for guests?",
+        a: "Yes — the property is a resort with on-site rooms and suites, so your outstation guests can stay where the celebration happens. Ask us about room blocks when you enquire.",
+      },
+      {
+        q: "What is the largest event the Siliguri venue can host?",
+        a: "The Kaiser Bagh Lawn accommodates up to 1,800 guests for open-air functions, while the air-conditioned Atharvan hall seats up to 550 — ideal for grand weddings and receptions.",
+      },
+    ],
+    schema: {
+      latitude: 26.7060,
+      longitude: 88.3953,
+      postalCode: "734010",
+      streetAddress: "Deep Nagar, Panchkel Guri, Khaprail Road, Matigara",
     },
   },
 ];
