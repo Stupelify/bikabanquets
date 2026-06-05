@@ -293,9 +293,9 @@ export const venues: Venue[] = [
     addressShort: "Lake Town, Kolkata",
     mapUrl: "https://maps.google.com/?q=Divinity+Pavilion+241+Golaghata+Road+Sreebhumi+Lake+Town+Kolkata",
     phone: "+918961333313",
-    // TODO: confirm exact capacity & amenities with client (values below are estimates)
+    // Capacity confirmed by client (1200). Seated figure & amenities still to confirm.
     capacity: [
-      { seated: 350, floating: 550, label: "Banquet Hall" },
+      { seated: 800, floating: 1200, label: "Banquet Hall" },
     ],
     amenities: [
       "Centralised AC",
@@ -309,7 +309,7 @@ export const venues: Venue[] = [
     description:
       "A premium banquet pavilion at Sreebhumi, Lake Town — elegant, centrally air-conditioned interiors with bespoke stage and floral décor for weddings, receptions and corporate events.",
     longDescription:
-      "Divinity Pavilion brings the Bika standard to Lake Town, moments from the landmark Sreebhumi on Golaghata Road. The centrally air-conditioned hall is designed for grand weddings and receptions, with a versatile stage that our in-house décor team transforms for everything from traditional Bengali ceremonies to contemporary sangeet nights. With in-house catering, full power backup and easy access from VIP Road, the Lake Town Metro corridor and North Kolkata, Divinity Pavilion is a refined choice for celebrations of every scale.",
+      "Divinity Pavilion brings the Bika standard to Lake Town, moments from the landmark Sreebhumi on Golaghata Road. The centrally air-conditioned hall accommodates up to 1,200 guests and is designed for grand weddings and receptions, with a versatile stage that our in-house décor team transforms for everything from traditional Bengali ceremonies to contemporary sangeet nights. With in-house catering, full power backup and easy access from VIP Road, the Lake Town Metro corridor and North Kolkata, Divinity Pavilion is a refined choice for celebrations of every scale.",
     heroImage: {
       src: "/images/venues/divinity/divinity-hero-13.jpg",
       alt: "Banquet hall with pink-draped chairs and a gold stage at Divinity Pavilion, Lake Town, Kolkata",
