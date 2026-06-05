@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 
 const SITE_NAME = "Bika Banquets";
 const BASE_URL = "https://bikabanquets.com";
-const DEFAULT_OG_IMAGE =
-  "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200/MBlLcEqY2yw3y2EF/smp01053-lz0Jo3w4Q9TkR6GT.JPG";
+const DEFAULT_OG_IMAGE = "/images/hero.jpg";
 
 export function buildMetadata({
   title,

@@ -43,7 +43,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1600/MBlLcEqY2yw3y2EF/smp01053-lz0Jo3w4Q9TkR6GT.JPG"
+            src="/images/hero.jpg"
             alt="Elegant banquet hall at Bika Banquets, Golaghata, Kolkata — decorated for a grand wedding reception"
             fill
             priority
