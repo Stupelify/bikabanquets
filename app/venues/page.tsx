@@ -5,9 +5,9 @@ import Reveal from "@/components/Reveal";
 import { venues } from "@/lib/venues";
 
 export const metadata: Metadata = {
-  title: "Wedding & Event Venues in Kolkata — Golaghata, Baguiati & Howrah",
+  title: "Wedding & Event Venues — Kolkata, Howrah & Siliguri | Bika Banquets",
   description:
-    "Explore Bika Banquets' three premium venues across Kolkata — Golaghata (400–600 guests), Baguiati VIP Road (700 guests, open terrace) and Howrah. In-house catering & décor at every location.",
+    "Explore Bika Banquets' venues across Kolkata, Howrah and Siliguri — Golaghata (400–600 guests), Baguiati VIP Road (700 guests, open terrace), Howrah, and our Four Vedas resort in Siliguri (lawn up to 1,800). In-house catering & décor at every location.",
 };
 
 export default function VenuesPage() {
@@ -21,10 +21,10 @@ export default function VenuesPage() {
             Our Locations
           </span>
           <h1 className="font-serif font-light text-[clamp(42px,6vw,80px)] leading-[1.02] tracking-[-0.02em] mt-5 mb-6">
-            Three Venues,<br />One <em className="italic text-gold">Standard of Excellence</em>
+            Our Venues,<br />One <em className="italic text-gold">Standard of Excellence</em>
           </h1>
           <p className="text-cream-dim text-lg max-w-2xl leading-relaxed">
-            Each Bika venue is independently equipped with its own kitchen, décor team and event staff — the same quality of celebration whether you&apos;re in Golaghata, Baguiati or Howrah.
+            Each Bika venue is independently equipped with its own kitchen, décor team and event staff — the same quality of celebration across Kolkata, Howrah and Siliguri.
           </p>
         </Reveal>
       </section>
@@ -74,7 +74,7 @@ export default function VenuesPage() {
               <div className="flex gap-10 py-6 border-y border-line mb-8">
                 {v.capacity.map((c) => (
                   <div key={c.label}>
-                    <div className="font-serif text-3xl text-gold-bright font-light leading-none">{c.floating}</div>
+                    <div className="font-serif text-3xl text-gold font-light leading-none">{c.floating}</div>
                     <div className="text-[10px] tracking-[1.5px] uppercase text-cream-dim mt-2">{c.label ?? "Max"} Floating</div>
                     <div className="font-serif text-lg text-cream font-light mt-1">{c.seated} seated</div>
                   </div>

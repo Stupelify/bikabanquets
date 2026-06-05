@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,16 +8,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 mb-14">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="font-serif text-2xl text-cream">
-              Bika <em className="italic text-gold">Banquets</em>
-            </div>
+            <Image
+              src="/images/bika-logo.png"
+              alt="Bika Banquets"
+              width={480}
+              height={286}
+              className="h-14 w-auto object-contain"
+            />
             <p className="text-sm text-cream-dim leading-relaxed mt-4 max-w-xs">
-              Premier event venues and catering across Kolkata since 2016.
-              Creating unforgettable celebrations at Golaghata, Baguiati and Howrah.
+              Premier event venues and catering since 2016.
+              Creating unforgettable celebrations across Kolkata, Howrah and Siliguri.
             </p>
             <div className="flex gap-3 mt-6">
               <a
-                href="https://wa.me/918961333313"
+                href="https://wa.me/916230325532"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -46,6 +51,8 @@ export default function Footer() {
                 { href: "/venues/golaghata", label: "Golaghata" },
                 { href: "/venues/baguiati", label: "Baguiati · Bika Rythm" },
                 { href: "/venues/howrah", label: "Howrah · Bika Rangoli" },
+                { href: "/venues/divinity", label: "Lake Town · Divinity Pavilion" },
+                { href: "/venues/siliguri", label: "Siliguri · Four Vedas" },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <Link href={href} className="text-sm text-cream-dim hover:text-gold transition-colors duration-300">
@@ -75,14 +82,14 @@ export default function Footer() {
               <li><a href="tel:+918961333313" className="text-sm text-cream-dim hover:text-gold transition-colors">+91 89613 33313</a></li>
               <li><a href="mailto:contact@bikabanquets.com" className="text-sm text-cream-dim hover:text-gold transition-colors">contact@bikabanquets.com</a></li>
               <li><Link href="/contact" className="text-sm text-cream-dim hover:text-gold transition-colors">Book a Site Visit</Link></li>
-              <li><Link href="/#faq" className="text-sm text-cream-dim hover:text-gold transition-colors">FAQ</Link></li>
+              <li><Link href="/contact#faq" className="text-sm text-cream-dim hover:text-gold transition-colors">FAQ</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-line pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-cream-dim/50">© 2025 Bika Banquets. All rights reserved.</p>
-          <p className="text-xs text-cream-dim/50">Golaghata · Baguiati · Howrah — Kolkata, West Bengal</p>
+          <p className="text-xs text-cream-dim/50">© {new Date().getFullYear()} Bika Banquets. All rights reserved.</p>
+          <p className="text-xs text-cream-dim/50">Golaghata · Baguiati · Howrah · Siliguri — West Bengal</p>
         </div>
       </div>
     </footer>

@@ -51,7 +51,7 @@ export default async function VenuePage({ params }: Props) {
     address: {
       "@type": "PostalAddress",
       streetAddress: v.schema.streetAddress,
-      addressLocality: "Kolkata",
+      addressLocality: v.city,
       addressRegion: "West Bengal",
       postalCode: v.schema.postalCode,
       addressCountry: "IN",
@@ -71,6 +71,29 @@ export default async function VenuePage({ params }: Props) {
     hasMap: v.mapUrl,
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://bikabanquets.com" },
+      { "@type": "ListItem", position: 2, name: "Venues", item: "https://bikabanquets.com/venues" },
+      { "@type": "ListItem", position: 3, name: v.brand, item: `https://bikabanquets.com/venues/${v.slug}` },
+    ],
+  };
+
+  const faqSchema =
+    v.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: v.faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   const otherVenues = venues.filter((x) => x.slug !== v.slug);
 
   return (
@@ -79,6 +102,16 @@ export default async function VenuePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(venueSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-end overflow-hidden">
@@ -117,18 +150,18 @@ export default async function VenuePage({ params }: Props) {
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-line">
             {v.capacity.map((c) => (
               <div key={c.label} className="py-8 px-6 text-center">
-                <div className="font-serif text-4xl text-gold-bright font-light leading-none">{c.floating}</div>
+                <div className="font-serif text-4xl text-gold font-light leading-none">{c.floating}</div>
                 <div className="text-[10px] tracking-[1.5px] uppercase text-cream-dim mt-2">{c.label} (floating)</div>
               </div>
             ))}
             <div className="py-8 px-6 text-center">
-              <div className="font-serif text-4xl text-gold-bright font-light leading-none">
+              <div className="font-serif text-4xl text-gold font-light leading-none">
                 {v.capacity.reduce((s, c) => s + c.seated, 0)}
               </div>
               <div className="text-[10px] tracking-[1.5px] uppercase text-cream-dim mt-2">Total Seated</div>
             </div>
             <div className="py-8 px-6 text-center">
-              <div className="font-serif text-4xl text-gold-bright font-light leading-none">{v.amenities.length}</div>
+              <div className="font-serif text-4xl text-gold font-light leading-none">{v.amenities.length}</div>
               <div className="text-[10px] tracking-[1.5px] uppercase text-cream-dim mt-2">Amenities</div>
             </div>
           </div>
@@ -180,8 +213,8 @@ export default async function VenuePage({ params }: Props) {
                         sizes="(max-width: 768px) 50vw, 33vw"
                       />
                       {img.caption && (
-                        <div className="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                          <span className="text-xs tracking-wider text-cream">{img.caption}</span>
+                        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <span className="text-xs tracking-wider text-white">{img.caption}</span>
                         </div>
                       )}
                     </div>
@@ -223,7 +256,7 @@ export default async function VenuePage({ params }: Props) {
                     </div>
                     <div className="flex items-center gap-3 pt-3 border-t border-line">
                       <span className="text-[10px] tracking-[2px] uppercase text-cream-dim">Max capacity</span>
-                      <span className="font-serif text-xl text-gold-bright">{maxCap}</span>
+                      <span className="font-serif text-xl text-gold">{maxCap}</span>
                     </div>
                   </div>
 
@@ -234,7 +267,7 @@ export default async function VenuePage({ params }: Props) {
                     Send Enquiry
                   </Link>
                   <a
-                    href={`https://wa.me/918961333313?text=Hi%2C%20I%27m%20interested%20in%20booking%20${encodeURIComponent(v.displayName)}.%20Can%20you%20share%20availability%20and%20pricing%3F`}
+                    href={`https://wa.me/916230325532?text=Hi%2C%20I%27m%20interested%20in%20booking%20${encodeURIComponent(v.displayName)}.%20Can%20you%20share%20availability%20and%20pricing%3F`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full border border-[#25D366]/40 text-[#25D366] py-4 rounded-full text-xs tracking-widest uppercase font-medium hover:bg-[#25D366]/10 transition-all duration-300"

@@ -2,7 +2,7 @@ export default function WhatsApp() {
   return (
     <div className="fixed bottom-7 right-7 z-40">
       <a
-        href="https://wa.me/918961333313?text=Hi%20Bika%20Banquets%2C%20I%27d%20like%20to%20enquire%20about%20booking%20a%20venue."
+        href="https://wa.me/916230325532?text=Hi%20Bika%20Banquets%2C%20I%27d%20like%20to%20enquire%20about%20booking%20a%20venue."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Bika Banquets on WhatsApp"
