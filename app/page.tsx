@@ -43,8 +43,8 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/venues/baguiati/baguiati-hero-14.jpg"
-            alt="Elegant floral wedding mandap at Bika Banquets, Kolkata — decorated for a grand wedding reception"
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1600/MBlLcEqY2yw3y2EF/smp01053-lz0Jo3w4Q9TkR6GT.JPG"
+            alt="Elegant banquet hall at Bika Banquets, Golaghata, Kolkata — decorated for a grand wedding reception"
             fill
             priority
             className="object-cover animate-slow-zoom"
