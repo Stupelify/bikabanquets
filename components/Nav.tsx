@@ -51,12 +51,12 @@ export default function Nav() {
       >
         <Link href="/" aria-label="Bika Banquets — Home" className="flex items-center">
           <Image
-            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=300/MBlLcEqY2yw3y2EF/1-2-removebg-scaled-e1752152009924-7iV2qZXAcVUCou9o.png"
+            src="/images/bika-logo.png"
             alt="Bika Banquets"
-            width={150}
-            height={44}
+            width={480}
+            height={286}
             priority
-            className={`h-10 w-auto object-contain transition-all duration-300 ${light ? "brightness-0 invert" : ""}`}
+            className={`h-12 w-auto object-contain transition-all duration-300 ${light ? "brightness-0 invert" : ""}`}
           />
         </Link>
 

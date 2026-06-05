@@ -9,11 +9,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=300/MBlLcEqY2yw3y2EF/1-2-removebg-scaled-e1752152009924-7iV2qZXAcVUCou9o.png"
+              src="/images/bika-logo.png"
               alt="Bika Banquets"
-              width={150}
-              height={44}
-              className="h-10 w-auto object-contain"
+              width={480}
+              height={286}
+              className="h-14 w-auto object-contain"
             />
             <p className="text-sm text-cream-dim leading-relaxed mt-4 max-w-xs">
               Premier event venues and catering since 2016.
